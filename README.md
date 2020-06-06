@@ -14,7 +14,6 @@ Start your image binding the external ports 8124 and 9001 to all interfaces to y
 ```
 docker create \
 --name=creepMiner \
--e AUTO_START=TRUE \
 -e TZ=<timezone> \
 -p 8124:8124 \
 -p 9001:9001 \
@@ -22,7 +21,7 @@ docker create \
 -v </path/to/local/config/dir>:/config
 -v </path/to/plot_dir_01>:/plot/01 \
 -v </path/to/plot_dir_02>:/plot/02 \
-whumphrey/creepminer
+0x6368/creepminer
 ```
 
 By default the miner uses a default config `/usr/local/sbin/mining.conf`. 
